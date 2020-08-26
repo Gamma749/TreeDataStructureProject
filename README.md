@@ -8,12 +8,19 @@ tree.c contains the implementation of the binary search tree data structure and 
 
 tree-test.c is the main executable of the project, where the tree structure is initialised and tested. This specific implementation has been set up to act as a spellcheck function by reading words from a dictionary, then checking to see if the next words to be read are in the dictionary, and outputing those that are not. tree-test.c must be compiled, then takes command line arguments in order to create the desired outcome.
 
+
 Specifically, the following flags have the respective following effects:
--c filename : Check the spelling of words in filename using words read from stdin as the dictionary. Print all unknown words to stdout. Print timing information and unknown word count to stderr. When this option is given then the -d and -o options should be ignored.
+
+-c filename : Check the spelling of words in filename using words read from stdin as the dictionary. Print all unknown words to stdout. Print timing information and unknown word count to stderr. When this option is given then the -d and -o options should be ignored.
+
 -d : print the depth of the tree to stdout and do nothing else
+
 -o : output a representation of the tree in "dot" form to a file (default tree-view.dot)
+
 -f filename : write the dot output to filename not the default file. -o must be given first
+
 -r : make the tree a red black tree rather than the default binary search tree
+
 -h : print a help message describing usage
 
 The dot notation may be compiled to a pdf file using
