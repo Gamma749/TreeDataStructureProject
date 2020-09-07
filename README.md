@@ -6,7 +6,7 @@ mylib.c contains several useful functions that help in the development of the pr
 
 tree.c contains the implementation of the binary search tree data structure and the extensions required to make this into a red black tree. Also contains all of the functions such as insert, search, depth, and so forth.
 
-tree-test.c is the main executable of the project, where the tree structure is initialised and tested. This specific implementation has been set up to act as a spellcheck function by reading words from a dictionary, then checking to see if the next words to be read are in the dictionary, and outputing those that are not. tree-test.c must be compiled, then takes command line arguments in order to create the desired outcome.
+main.c is the main executable of the project, where the tree structure is initialised and tested. This specific implementation has been set up to act as a spellcheck function by reading words from a dictionary, then checking to see if the next words to be read are in the dictionary, and outputing those that are not. main.c must be compiled, then takes command line arguments in order to create the desired outcome.
 
 
 Specifically, the following flags have the respective following effects:
