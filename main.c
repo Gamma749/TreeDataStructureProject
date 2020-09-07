@@ -68,17 +68,23 @@ int main(int argc, char **argv){
             case 'h':
                 /*Print a help message!*/
                 printf("USAGE: ./asgn [OPTION] <STDIN>\n");
-                printf("Perform various operations using a binary tree.  By default, words\n"
-                       "are read from stdin and added to the tree, before being printed out\n"
+                printf("Perform various operations using a binary tree.  "
+                       "By default, words\n"
+                       "are read from stdin and added to the tree,"
+                       "before being printed out\n"
                        "alongside their frequencies to stdout.\n"
-                       "\n"
-                       "-c FILENAME  Check spelling of words in FILENAME using words\n"
+                       "\n");
+                printf("-c FILENAME  Check spelling of words in "
+                       "FILENAME using words\n"
                        "\tread from stdin as the dictionary.  Print timing\n"
                        "\tinfo & unknown words to stderr (ignore -d & -o)\n"
                        "-d           Only print the tree depth (ignore -o)\n"
-                       "-f FILENAME  Write DOT output to FILENAME (if -o given)\n"
-                       "-o           Output the tree in DOT form to file 'tree-view.dot'\n"
-                       "-r           Make the tree an RBT (the default is a BST)\n"
+                       "-f FILENAME  Write DOT output to"
+                       "FILENAME (if -o given)\n"
+                       "-o           Output the tree in DOT form to"
+                       "file 'tree-view.dot'\n"
+                       "-r           Make the tree an RBT "
+                       "(the default is a BST)\n"
                        "\n"
                        "-h           Print this message\n");
                 exit(EXIT_SUCCESS);
